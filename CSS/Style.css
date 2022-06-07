@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      45deg,
+      rgba(234, 241, 245, 0.8),
+      rgba(244, 246, 247, 0.5)
+    ),
+    url(https://img.freepik.com/free-photo/clouds_69709-219.jpg?size=626&ext=jpg&ga=GA1.2.710789289.1654630818);
+  background-size: cover;
+}
+
+.wrapper {
+  margin: 50px auto 0;
+  text-align: center;
+  width: 400px;
+}
+
+.form {
+  border: 2px solid #042d43;
+  background-color: f6cbdb;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+#input-todo {
+  width: 100%;
+  padding: 5px 0;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+#input-todo::placeholder {
+  padding-left: 10px;
+}
+.btn {
+  padding: 5px 0;
+  width: 100%;
+  border-radius: 10px;
+}
+/* Output */
+
+.wrapper h2 {
+  margin: 50px 0 20px;
+}
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #6f122d;
+  width: 100%;
+  align-items: center;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+}
+.todo-item {
+  background-color: #fff;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  color: #000000;
+}
+.todo-item + .todo-item {
+  margin-bottom: 10px;
+}
+
+.todo-item:first-child {
+  margin-bottom: 10px;
+}
